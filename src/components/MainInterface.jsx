@@ -49,14 +49,14 @@ const MainInterface = () => {
     {
       id: 'broken',
       title: 'BROKEN',
-      subtitle: 'Latest Album',
-      thumbnail: 'https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/vyaf07ou_Broken%20cover.png'
+      subtitle: 'Album',
+      
     },
     {
       id: 'hello-world',
       title: 'Hello, World!',
       subtitle: 'Debut Album', 
-      thumbnail: 'https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/qgcwoa8a_HWlogo.png'
+      
     }
   ];
 
@@ -162,11 +162,7 @@ const MainInterface = () => {
                   {/* Album Cover */}
                   <div className="flex-shrink-0 relative">
                     <div className="w-48 h-48 rounded-lg overflow-hidden group">
-                      <img
-                        src="https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/vyaf07ou_Broken%20cover.png"
-                        alt="BROKEN"
-                        className="w-full h-full object-cover"
-                      />
+                    
                       {/* Music Visualizer Overlay */}
                       {playingAlbum === 'broken' && (
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -261,11 +257,7 @@ const MainInterface = () => {
                   <div className="flex items-center gap-6">
                     <div className="flex-shrink-0 relative">
                       <div className="w-32 h-32 rounded-lg overflow-hidden group">
-                        <img
-                          src="https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/qgcwoa8a_HWlogo.png"
-                          alt="Hello, World!"
-                          className="w-full h-full object-cover"
-                        />
+                        
                         {playingAlbum === 'hello-world' && (
                           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                             <div className="music-visualizer flex items-center space-x-1 scale-75">
@@ -327,11 +319,7 @@ const MainInterface = () => {
               {/* Profile Image */}
               <div className="flex-shrink-0">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-cyan-400/50 shadow-2xl">
-                  <img
-                    src="https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/eghxz7is_Profile.png"
-                    alt="DEV 404 Profile"
-                    className="w-full h-full object-cover"
-                  />
+                  
                 </div>
               </div>
               
@@ -427,11 +415,7 @@ const MainInterface = () => {
           <div className="text-center mb-8">
             {/* DEV404 Logo */}
             <div className="w-40 h-40 mx-auto mb-6 relative">
-              <img
-                src="https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/p62y1l5k_logo.png"
-                alt="DEV404 Logo"
-                className="w-full h-full object-contain"
-              />
+              
               <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
                 LIVE
               </div>

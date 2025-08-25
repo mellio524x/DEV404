@@ -31,19 +31,7 @@ export default function App() {
     }
   }, []);
 
-  useEffect(() => {
-    if (!showBoot) {
-      const fetchSignupCount = async () => {
-        try {
-          const response = await axios.get(`${BACKEND_URL}/api/signups/count`);
-          setSignupCount(response.data.count);
-        } catch (error) {
-          console.error('Error fetching signup count:', error);
-        }
-      };
-      fetchSignupCount();
-    }
-  }, [showBoot]);
+  
 
   useEffect(() => {
     const simulateAudioReactivity = () => {
@@ -110,12 +98,13 @@ export default function App() {
           <div className="mb-8">
             {/* DEV404 Logo */}
             <div className="w-48 h-48 mx-auto mb-6 shadow-2xl logo-pulse rounded-full overflow-hidden bg-gradient-to-br from-cyan-400/20 to-blue-600/20 border-4 border-cyan-400/50">
-              <img
-                src="https://customer-assets.emergentagent.com/job_devmusic-refresh/artifacts/p62y1l5k_logo.png"
-                alt="DEV404 Logo"
-                className="w-full h-full object-cover"
-              />
+               <img 
+                    src="/logo.jpg"   // put logo.png inside `public/` folder
+                    alt="DEV404 Logo"
+                   className="w-full h-full object-cover"
+                />
             </div>
+            
             <h1 className="text-7xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent typewriter">
               DEV 404
             </h1>

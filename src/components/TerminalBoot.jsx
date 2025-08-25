@@ -12,6 +12,7 @@ const TerminalBoot = ({ onBootComplete }) => {
     { text: "> Checking audio drivers... ✓", delay: 800 },
     { text: "> Loading Album_01 [████████████████████] 100%", delay: 1500 },
     { text: "> Loading Album_02 [████████████████████] 100%", delay: 1500 },
+    { text: "> Loading Album_03 [████████████████████] 100%", delay: 1500 },
     { text: "> Syntax validated. No bugs found in harmony.", delay: 1000 },
     { text: "> Welcome to the Full-Stack Sonic Experience...", delay: 1200 },
     { text: "> System ready. Launching interface...", delay: 800 }
@@ -59,14 +60,6 @@ const TerminalBoot = ({ onBootComplete }) => {
           {/* Terminal Content */}
           <div className="p-6 min-h-[400px] bg-black rounded-b-lg">
             <div className="text-sm space-y-2">
-              <div className="text-green-400 mb-4">
-                ██████╗ ███████╗██╗   ██╗    ██╗  ██╗ ██████╗ ██╗  ██╗<br/>
-                ██╔══██╗██╔════╝██║   ██║    ██║  ██║██╔═████╗██║  ██║<br/>
-                ██║  ██║█████╗  ██║   ██║    ███████║██║██╔██║███████║<br/>
-                ██║  ██║██╔══╝  ╚██╗ ██╔╝    ╚════██║████╔╝██║╚════██║<br/>
-                ██████╔╝███████╗ ╚████╔╝          ██║╚██████╔╝     ██║<br/>
-                ╚═════╝ ╚══════╝  ╚═══╝           ╚═╝ ╚═════╝      ╚═╝<br/>
-              </div>
 
               {output.map((line, index) => (
                 <div key={index} className="typing-effect">
